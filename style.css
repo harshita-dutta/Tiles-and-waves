@@ -12,10 +12,10 @@ h1 {
 
 h1:hover {
   color: #fff;
-  text-shadow: 0 0 5px #f40398,
-              0 0 25px #f40398,
-              0 0 50px #f40398,
-              0 0 100px #f40398;
+  text-shadow: 0 0 5px #03e4f4,
+              0 0 25px #03e4f4,
+              0 0 50px #03e4f4,
+              0 0 100px #03e4f4;
 }
 
 
@@ -44,7 +44,7 @@ header{
 
 #form{
     /* border: 2px solid white; */
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px 10px;
     display: flex;
@@ -61,6 +61,10 @@ header{
     font-size: 16px;
     outline: none;
     border-radius: 10px;
+    border: 3px solid #25495a;
+    background-color: black;
+    color: rgb(153, 198, 218);
+
 }
 
 
@@ -109,27 +113,6 @@ header{
 
   }
 
-/* button{
-    padding: 10px 10px;
-    border-radius: 50%;
-    border: 2px solid white;
-    font-size: 16px;
-    margin-top: 15px;
-    background-color: black;
-    color: #ccc;
-    font-weight: 700;
-} 
-button:hover{
-    background-color: black;
-    color: white;
-    transition: 1s;
-    cursor: pointer;
-    border-color: white;
-    text-shadow: 0 0 5px #03e4f4,
-                0 0 25px #03e4f4,
-                0 0 50px #03e4f4,
-                0 0 100px #03e4f4;
-} */
 
 .keys{
     border: 2px solid white;
@@ -148,11 +131,17 @@ button:hover{
 
 /* input box animation --- */
 .col-3{float: left;
-     position: relative;} /* necessary to give position: relative to parent. */
-input[type="text"]{box-sizing: border-box; letter-spacing: 1px;}
+     position: relative;
+    } /* necessary to give position: relative to parent. */
+input[type="text"]{
+    box-sizing: border-box; 
+    letter-spacing: 1px;
+}
 
-.effect-7
-{border: 1px solid #ccc; transition: 0.4s;}
+.effect-7{
+    border: 1px solid #ccc; 
+    transition: 0.4s;
+}
 
 .effect-7 ~ .focus-border:before,
 .effect-7 ~ .focus-border:after{
@@ -162,7 +151,7 @@ input[type="text"]{box-sizing: border-box; letter-spacing: 1px;}
     left: 50%; 
     width: 0; 
     height: 4px; 
-    background-color: #4e7c92; 
+    background-color: rgb(153, 198, 218); 
     transition: 0.4s;
 }
 .effect-7 ~ .focus-border:after{
@@ -177,7 +166,7 @@ input[type="text"]{box-sizing: border-box; letter-spacing: 1px;}
     left: 0; 
     width: 4px; 
     height: 0; 
-    background-color: #4e7c92; transition: 0.6s;
+    background-color: rgb(153, 198, 218); transition: 0.6s;
 }
 .effect-7 ~ .focus-border i:after{
     left: auto; 
