@@ -19,7 +19,6 @@ h1:hover {
 }
 
 
-
 body{
     margin: 0;
     display: flex;
@@ -44,8 +43,8 @@ header{
 } */
 
 #form{
-
-    margin-top: 50px;
+    /* border: 2px solid white; */
+    margin-top: 30px;
     margin-bottom: 20px;
     padding: 10px 10px;
     display: flex;
@@ -78,6 +77,10 @@ header{
     font-size: 15px;
   }
   
+.animated-border-button:hover {
+    color: rgb(153, 198, 218);
+}
+
 .animated-border-button:before,
 .animated-border-button:after {
     border: 0 solid transparent;
@@ -152,12 +155,43 @@ input[type="text"]{box-sizing: border-box; letter-spacing: 1px;}
 {border: 1px solid #ccc; transition: 0.4s;}
 
 .effect-7 ~ .focus-border:before,
-.effect-7 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 50%; width: 0; height: 2px; background-color: black; transition: 0.4s;}
-.effect-7 ~ .focus-border:after{top: auto; bottom: 0;}
+.effect-7 ~ .focus-border:after{
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+    width: 0; 
+    height: 4px; 
+    background-color: #4e7c92; 
+    transition: 0.4s;
+}
+.effect-7 ~ .focus-border:after{
+    top: auto; 
+    bottom: 0;
+}
 .effect-7 ~ .focus-border i:before,
-.effect-7 ~ .focus-border i:after{content: ""; position: absolute; top: 50%; left: 0; width: 2px; height: 0; background-color: black; transition: 0.6s;}
-.effect-7 ~ .focus-border i:after{left: auto; right: 0;}
+.effect-7 ~ .focus-border i:after{
+    content: ""; 
+    position: absolute; 
+    top: 50%; 
+    left: 0; 
+    width: 4px; 
+    height: 0; 
+    background-color: #4e7c92; transition: 0.6s;
+}
+.effect-7 ~ .focus-border i:after{
+    left: auto; 
+    right: 0;
+}
 .effect-7:focus ~ .focus-border:before,
-.effect-7:focus ~ .focus-border:after{left: 0; width: 100%; transition: 0.4s;}
+.effect-7:focus ~ .focus-border:after{
+    left: 0; 
+    width: 100%; 
+    transition: 0.4s;
+}
 .effect-7:focus ~ .focus-border i:before,
-.effect-7:focus ~ .focus-border i:after{top: 0; height: 100%; transition: 0.6s;}
+.effect-7:focus ~ .focus-border i:after{
+    top: 0; 
+    height: 100%; 
+    transition: 0.6s;
+}
