@@ -81,7 +81,7 @@ function code() {
             color = randomColor();
             event.target.style.backgroundColor = color;
             buttons.addEventListener('mouseover', audioPlay(trackNum));
-            setTimeout(buttons.addEventListener('mouseleave', audioPause(trackNum)), 1000);
+            buttons.addEventListener('mouseleave', audioPause(trackNum));
             trackNum = randomNumber(trackNum);
             i++;
             console.log("after " + i + " div: " + trackNum);
