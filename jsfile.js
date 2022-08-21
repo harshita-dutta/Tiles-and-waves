@@ -55,15 +55,13 @@ function audioPause(num) {
 function code() {
     
     const div = document.querySelector('#mainDiv');
-    
+    // div.parentNode.removeChild('ul');
+
     for (let i = 0; i < n*n; i++){
         let subDiv = document.createElement('div');
         subDiv.setAttribute('class', 'keys');
         //subDiv.style.backgroundColor = randomColor();
         div.appendChild(subDiv);
-        if (n > 13) {
-            subDiv.setAttribute('style', 'width:40px;');
-        }
     }
 
 
@@ -78,17 +76,20 @@ function code() {
         buttons.addEventListener("mouseover", () => {
             
         });
+        let color;
         buttons.addEventListener('mouseover', event => {
-            event.target.style.backgroundColor = randomColor();
+            color = randomColor();
+            event.target.style.backgroundColor = color;
             buttons.addEventListener('mouseover', audioPlay(trackNum));
-            setTimeout(buttons.addEventListener('mouseover', audioPause(trackNum)), 1000);
+            setTimeout(buttons.addEventListener('mouseleave', audioPause(trackNum)), 1000);
             trackNum = randomNumber(trackNum);
             i++;
             console.log("after " + i + " div: " + trackNum);
+            buttons.style.border = '2px solid black';
         })
 
         buttons.addEventListener('mouseleave', () => {
-            
+            buttons.style.border = `2px solid ${color}`;
         });
         trackNum = randomNumber(trackNum);
         i++;
