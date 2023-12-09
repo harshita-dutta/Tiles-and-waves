@@ -5,7 +5,7 @@ This project TILES AND WAVES has been designed using the octaves of musical note
 
 ## Road Map
 -> First page recieves matrix size input form the user 
--> Matrix of nxn size will be formed , n's value depend on the input form user 
+-> Matrix of nxn size will be formed , 'n' value depends on the input from the user 
 -> The 8 music notes gets played depending on the indcies which vaires from 0 to 7 ,getting incremented by 1.
 -> Once i becomes 7 it goes back 0 and the loop continues. 
 -> The tiles are designed such that when mouse is being hovered through the tiles random colours appear.
@@ -42,17 +42,11 @@ JAVASCRIPT
 
 ## Deployment
 
-To deploy this project run
+To deploy this project run - 
 
 ```bash
   https://harshita-dutta.github.io/Tiles-and-waves/
 ```
 
-
-## Authors
-
-- [harshita-dutta](https://github.com/harshita-dutta/Tiles-and-waves.git)
-
-- [Hayfa13](https://github.com/Hayfa13/Tiles-and-waves.git)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
